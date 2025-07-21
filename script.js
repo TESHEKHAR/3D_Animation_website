@@ -24,7 +24,7 @@ for (let i = 0; i < count; i++) {
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
 
 const material = new THREE.PointsMaterial({
-  color: 0x00ffff,
+  color: 0x0000ff,
   size: 0.5,
 });
 
