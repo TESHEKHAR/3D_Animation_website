@@ -638,13 +638,6 @@ canvas {
   }
 }
 /*-------------------------------------------------------------website hero----------------------*/
-.carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 90vh;
-}
-
 .slides {
   display: flex;
   height: 100%;
@@ -663,17 +656,6 @@ canvas {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
 }
 
 .overlay-content {
@@ -855,25 +837,12 @@ li {
   height: 90vh;
 }
 
-.slides {
-  display: flex;
-  height: 100%;
-  transition: transform 0.8s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  height: 100%;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.slide img {
+/* .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top center;
-}
+} */
 .overlay {
   position: absolute;
   inset: 0;
@@ -884,10 +853,6 @@ li {
   justify-content: center;
   padding: 2rem;
   text-align: center;
-}
-
-.overlay-content {
-  max-width: 600px;
 }
 
 .overlay h2 {
@@ -1145,19 +1110,6 @@ li {
   }
   .main-card, .orbiting-card { width: 100% !important; }
 }
-/* ---------- Base Slider Styles ---------- */
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-}
-
-.slide img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-}
 
 /* ---------- Mobile Responsive ---------- */
 
@@ -1165,11 +1117,6 @@ li {
 @media (max-width: 768px) {
   .carousel {
     height: 50vh;
-  }
-
-  .slide img {
-    height: 50vh;
-    object-fit: cover;
   }
 
   .overlay {
@@ -1190,22 +1137,29 @@ li {
   .carousel {
     height: 40vh;
   }
-
-  .slide img {
-    height: 40vh;
-    object-fit: cover;
-  }
-
   .overlay h2 {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: center; /* Ensures the heading is centered */
   }
 
   .overlay ul {
-    padding-left: 1rem;
+    /* Add this to center the list itself within the overlay content */
+    display: inline-block; /* Allows auto-width based on content */
+    text-align: left; /* Keep bullet points left-aligned within the list */
+    padding: 0; /* Remove default padding from ul */
   }
 
   .overlay ul li {
     font-size: 0.9rem;
+    text-align: left; /* Keep bullet points left-aligned within their list item */
+  }
+
+  .overlay-content {
+    /* Center the overlay content block for smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%; /* Adjust as needed */
   }
 }
