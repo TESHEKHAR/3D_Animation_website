@@ -1,70 +1,427 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>3D Landing Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">
-        <img src="your-logo.png" alt="Logo" />
-      </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+     <!-------------------------------------------------header-------------------------->
+    <nav class="navbar" id="navbar">
+      <div class="logo">Mylogo</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <div class="close-btn" id="close-btn">&times;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="/website.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!----------------------------------------- Hero Section --------------------------------->
+  <section class="hero-main">
     <div class="hero-text">
       <h1>Next-Gen Web Experiences</h1>
       <p>We create 3D interactive websites that engage users</p>
     </div>
     <div class="canvas-container"></div>
   </section>
-
-  <!-- Cards Section -->
-  <section class="cards-section">
-    <div class="container cards-grid">
-      <div class="card">
-        <h3>Interactive Design</h3>
-        <p>Beautiful and engaging interfaces.</p>
+   <!--------------------------------------------------------About--------------------------->
+    <main class="about-container">
+      <div class="about">
+        <h3>
+          End-to-end enterprise website strategy, design, and development
+          services.
+        </h3>
+        <div class="about-content">
+          <p>
+            Shristiwebmedia offers enterprise-level websites that are
+            custom-designed and developed to your business requirements,
+            starting with strategy and ending with QA. Informed by research,
+            SEO, data analytics, and your business goals, our expert team of
+            content strategists, UX/UI designers, and full-stack developers
+            craft a best-in-class solution that’s beautiful and easy to manage,
+            while maintaining your historical SEO value.
+          </p>
+          <br />
+          <ul>
+            <li>
+              Using advanced technology to bring you high end solutions in new
+              media, web and e-learning.
+            </li>
+            <li>
+              Grow your customer base and boost your sales with an attractive
+              eCommerce website. We create digital stores that attract online
+              shoppers and convert them into customers.
+            </li>
+            <li>
+              Be it Web Design and Development, Mobile Apps, or Digital
+              Marketing, we represent your businesses across all digital spaces,
+              while combining unmatched creativity and sheer practicality.
+            </li>
+          </ul>
+          <br />
+          We go a step beyond ensuring the website or app has a smooth user
+          experience and is visually appealing. By combining usability with
+          aesthetics, we create unique web solutions that satisfy both you and
+          your customers.
+        </div>
       </div>
-      <div class="card">
-        <h3>3D Animation</h3>
-        <p>Dynamic 3D visuals with WebGL & Three.js.</p>
-      </div>
-      <div class="card">
-        <h3>Fast Performance</h3>
-        <p>Optimized for speed and responsiveness.</p>
+    </main>
+    <!--------------------------------------------------------text box----------------------->
+    <div class="text-boxheading">
+      <h3 class="text-color">We are expertise in</h3>
+    </div>
+    <!-------------------------------------------------------Service List-------------------------->
+    <div class="service-list">
+      
+      <!-- 🌈 Blurred Rainbow Background -->
+      <div class="background-glow"></div>
+      <!-- 📦 Card Grid -->
+      <div class="card-service">
+        <div class="card_list">
+          <i class="fas fa-globe icon"></i>
+          <h3>Website Development</h3>
+          <p>
+            shristiwebmedia is a team of passionate designers and developers who
+            specialize in building clean, scalable, and high-performing websites
+            tailored to your goals. Whether it’s a corporate site, eCommerce
+            platform, or landing page, our developers use the latest
+            technologies to ensure speed, security, and cross-device
+            responsiveness. From concept to code, we bring your vision to life.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-mobile-alt icon"></i>
+          <h3>App Development</h3>
+          <p>
+            we design and develop custom mobile applications that deliver real
+            impact. Whether it’s Android, iOS, or cross-platform, we build
+            intuitive, scalable apps that engage users and accelerate business
+            growth.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-bullhorn icon"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            shristiwebmedia is a results-focused digital marketing agency
+            committed to helping businesses thrive online. We don’t believe in
+            one-size-fits-all solutions — we tailor our strategies to meet your
+            specific goals, industry, and audience. Every Website every page is
+            now SEO Ready. From Meta tags and Head Tags to Canonical Url’s can
+            now be optimized.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-search icon"></i>
+          <h3>SEO</h3>
+          <p>
+            we don’t just chase rankings — we deliver real business growth. With
+            a data-driven approach and deep search engine expertise, we help you
+            stay ahead of algorithm updates, outperform competitors, and
+            generate long-term results.Whether you're a startup, local business,
+            or enterprise, our SEO experts are here to turn your website into a
+            high-performing asset.Whether you're looking to increase leads,
+            improve brand awareness, or dominate your niche, we use proven,
+            ethical SEO techniques to put your website where it belongs — at the
+            top of search results.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-share-alt icon"></i>
+          <h3>SMO</h3>
+          <p>
+            Social Media Optimization (SMO) is the art and science of enhancing
+            your social media presence for better visibility, engagement, and
+            growth. It involves optimizing your profiles, content strategy, and
+            posting schedules across platforms like Facebook, Instagram,
+            LinkedIn, Twitter (X), and more.With the right SMO strategy, your
+            business becomes more discoverable, more trusted, and more
+            shareable.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-lightbulb icon"></i>
+          <h3>Strategy</h3>
+          <p>
+            Develop actionable digital strategies to grow and scale your brand
+            online.The capability to measure the performance of marketing
+            tactics brings in cost-effectiveness in strategy and helps them
+            identify the nonperforming areas.it’s the foundation of everything
+            we do.We don’t believe in guesswork or generic solutions. Every
+            project starts with a deep understanding of your business, audience,
+            and goals. From there, we craft a custom strategy that combines
+            creativity, data, and technology to deliver measurable results.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-pen-nib icon"></i>
+          <h3>Branding</h3>
+          <p>
+            We dive deep into your goals, industry, and audience to define your
+            brand’s personality, values, tone, and positioning.we help
+            businesses shape how the world sees them. Our branding services go
+            beyond visuals — we build identities that speak clearly, feel
+            consistent, and stand the test of time. Whether you're launching,
+            scaling, or evolving, we create branding that reflects your vision
+            and connects with your audience.
+          </p>
+        </div>
+        <div class="card_list">
+          <i class="fas fa-pen-nib icon"></i>
+          <h3>Leads Generation</h3>
+          <p>
+            we specialize in lead generation strategies that bring you qualified
+            prospects ready to convert. From targeted campaigns to optimized
+            funnels — we help you fill your pipeline with real opportunities,
+            not just empty traffic.Lead generation is the process of attracting
+            and converting strangers into potential customers who have shown
+            interest in your product or service. It’s the lifeblood of growth
+            for modern businesses — especially in digital-first markets.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <!-------------------------------------------------text box----------------------->
+    <div class="text-boxheading">
+      <h3 class="text-color">Get Free Consultation to Discover Your Digital Performance</h3>
     </div>
-  </footer>
+    <!------------------------------------------------------moving cards---------------------------->
+    <div class="card-box">
+      <div class="circle-container">
+        <div class="main-card">
+          <h4 class="gradient-text">
+            Call us to Analyze your website, SEO, social media and online presence.
+          </h4>
+        </div>
+        <div class="orbiting-card">Web Design</div>
+        <div class="orbiting-card">Website Development</div>
+        <div class="orbiting-card">Digital Marketing</div>
+        <div class="orbiting-card">Strategy</div>
+        <div class="orbiting-card">SEO</div>
+        <div class="orbiting-card">SMO</div>
+        <div class="orbiting-card">Branding</div>
+        <div class="orbiting-card">App Development</div>
+      </div>
+    </div>
+    <!-------------------------------------------------text box----------------------->
+    <div class="text-boxheading">
+      <h3 class="text-color">Our Development Process – Key Stages</h3>
+    </div>
+    <!-----------------------------------------------------------Stratedgy--------------------------->
+    <div class="stratedgy-container">
+      <div class="stratedgy-box">
+        <div class="stratedgy">
+          <div class="icon">🌟</div>
+          <h3>Discovery & Consultation</h3>
+          <h2>Understanding Your Business & Vision</h2>
+          <p>
+            We start with a deep dive into your business, target audience and goals. This phase includes:<br/><br/>
+            <ul>
+              <li>A free initial consultation</li>
+              <li>Brand and market research</li>
+              <li>Goal clarification</li>
+              <li>Identifying technical and design requirements</li>
+            </ul>
+            <h2>Outcome: Clear project scope and vision alignment.</h2>
+          </p>
+        </div>
+        <div class="stratedgy">
+          <div class="icon">🔥</div>
+          <h3>Planning & Strategy</h3>
+          <h2>Laying the Foundation for Success</h2>
+          <p>
+            Once we understand your goals, we craft a custom strategy tailored to your business.We develop:<br/><br/>
+            <ul>
+              <li>Site architecture & user journey</li>
+              <li>Technology stack & CMS decisions</li>
+              <li>Content strategy</li>
+              <li>Timeline and milestone mapping</li>
+            </ul>
+            <h2>Outcome: A detailed project roadmap and wireframes.</h2>
+          </p>
+        </div>
+        <div class="stratedgy">
+          <div class="icon">⚡</div>
+          <h3>Design & Prototyping</h3>
+          <h2>Visualizing Your Brand Online</h2>
+          <p>
+            Our design team transforms ideas into interactive, user-centered layouts that reflect your brand’s identity.Includes:<br/><br/>
+            <ul>
+              <li>High-fidelity mockups.</li>
+              <li>Interactive prototypes.</li>
+              <li>UI/UX best practices.</li>
+              <li>Revisions based on feedback.</li>
+            </ul>
+            <h2>Outcome: Approved design ready for development.</h2>
+          </p>
+         </div> 
+        <div class="stratedgy">
+          <div class="icon">☀️</div>
+          <h3>Development</h3>
+          <h2>Turning Design into Functionality</h2>
+          <p>
+            Our developers bring the approved design to life with clean, scalable code.We implement:<br/><br/>
+            <ul>
+              <li>Responsive front-end development.</li>
+              <li>Secure back-end functionality.</li>
+              <li>CMS setup (WordPress, Webflow, custom).</li>
+              <li>Performance optimization.</li>
+            </ul>
+            <h2>Outcome: A fully functional, mobile-optimized website.</h2>
+          </p>
+        </div>
+        <div class="stratedgy">
+          <div class="icon">🌙</div>
+          <h3>Testing & Quality Assurance</h3>
+          <h2>Ensuring Stability and Performance</h2>
+          <p>
+            Before launch, we rigorously test across devices and browsers.We check:<br/><br/>
+            <ul>
+              <li>Performance & load time.</li>
+              <li>Cross-browser compatibility.</li>
+              <li>Mobile responsiveness.</li>
+              <li>Bug fixes & security audit.</li>
+            </ul>
+            <h2>Outcome: A polished, error-free website ready to go live.</h2>
+          </p>
+        </div>
+        <div class="stratedgy">
+          <div class="icon">🌈</div>
+          <h3> Launch & Deployment</h3>
+          <h2>From Our Hands to the World</h2>
+          <p>
+            With your approval, we push the website live. We handle all technicalities:<br/><br/>
+            <ul>
+              <li>Domain setup.</li>
+              <li>Hosting configuration.</li>
+              <li>SEO optimization.</li>
+              <li>Post-launch testing.</li>
+            </ul>
+           <h2> Outcome: Your website is live, secure, and fully functional.</h2>
+          </p>
+        </div>
+        <div class="stratedgy">
+          <div class="icon">🛡️</div>
+          <h3>Maintenance & Growth</h3>
+          <h2>Beyond Launch: Continuous Support</h2>
+          <p>
+            Websites need care and optimization to stay competitive. We offer:<br/><br/>
+            <ul>
+              <li>Regular updates & backups.</li>
+              <li>SEO monitoring.</li>
+              <li>Speed optimization.</li>
+              <li>Feature enhancements.</li>
+            </ul>
+            <h2>Outcome: A future-proof site that grows your business.</h2>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------QUOTATION------------------------->
+    <div style="padding: 20px;">
+      <h3 class="text-color">Big or small, we’re here for it all. Whether you're just getting started or running a large company, we're confident we can be the right match for your needs.</h3>
+    </div>
+    <div class="quota">
+      <div class="quot">
+        <h3>Expertise & experience</h3>
+        <p>
+          With a proven track record of excellence, we bring years of hands-on experience and deep industry knowledge to every project. Our team is composed of seasoned professionals who specialize in delivering high-impact solutions tailored to your goals. Whether it's web development, branding, digital marketing, or business strategy — we combine creativity with technical precision to produce results that drive success.<br/>
+        We don’t just deliver services — we deliver value. Let us help you turn vision into reality with expertise you can trust.
+        </p>
+      </div>
+      <div class="quot">
+        <h3>Professionalism</h3>
+        <p>
+          At the core of everything we do is a deep commitment to professionalism. As a modern web agency, we understand that technical skill is only part of the equation — the way we communicate, collaborate, and deliver results matters just as much. Our clients trust us not only for our expertise but for the integrity, discipline, and reliability we bring to every project.<br/>
+          When you work with us, you're partnering with a team that values precision, trust, and excellence. We believe that true professionalism creates lasting relationships — and we aim to earn that trust with every project we take on.
+        </p>
+      </div>
+      <div class="quot">
+        <h3>Quality assurance</h3>
+        <p>
+          At shristiwebmedia, quality assurance is a core part of our development process, not just an afterthought. From the first line of code to the final product launch, we follow a structured, detail-focused approach to ensure that every project we deliver is stable, scalable, and polished to perfection.Every website or application goes through multiple rounds of testing — functionality, usability, responsiveness, performance, and cross-browser compatibility.<br/>
+          With us, you don’t just get a finished product — you get a reliable, well-tested, and high-performing solution that reflects your brand at its best.
+        </p>
+      </div>
+      <div class="quot">
+        <h3>Ongoing support</h3>
+        <p>
+          we believe that long-term success requires continuous care. That’s why we offer reliable, responsive, and flexible ongoing support to keep your website or digital product running smoothly, updated regularly, and optimized for performance.Regular updates, security patches, and performance monitoring to ensure everything runs without a hitch.We provide secure backups and restoration options, so your data and site are always protected.<br/>
+          We help you track performance and suggest improvements based on real data.Our ongoing support plans are built to suit your business needs — whether you need us monthly, quarterly, or just on standby.
 
-  <!-- Three.js CDN -->
-  <script src="https://unpkg.com/three@0.160.1/build/three.min.js"></script>
-  <script src="script.js"></script>
-  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/243351469.js"></script>
-  <script> window.chtlConfig = { chatbotId: "7756226636" } </script> -->
-<script async data-id="7756226636" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-</body>
+        </p>
+      </div>
+      <div class="quot">
+        <h3>Flexibility</h3>
+        <p>
+          At our web agency, flexibility is at the heart of how we work. We understand that businesses evolve, priorities shift, and new ideas emerge. That’s why we stay agile, adaptable, and open-minded throughout every stage of your project.Whether you're a startup with a lean budget or an enterprise with complex needs, we scale our services to match your vision.<br/>
+          if you Want to be hands-on or prefer a hands-off approach? We adjust to your preferred working style.
+          We don’t force you into a rigid system — we build one around you.
+Because real success comes from listening, adjusting, and growing together.
+
+
+        </p>
+      </div>
+      <div class="quot">
+        <h3>Cost-effective</h3>
+        <p>
+          We believe in delivering exceptional results without breaking your budget. Our cost-effective solutions are designed to give you the most value for your investment — combining smart strategy, efficient processes, and scalable services tailored to your needs. Our streamlined workflows and reusable code libraries speed up delivery without sacrificing quality.<br/>
+          From design and development to support and optimization, we handle it all — reducing the need to hire multiple vendors.We help you make the most of your digital investment — so you get the performance you need, at a price that makes sense.
+        </p>
+      </div>
+      
+    </div>
+    <!----------------------------------------footer------------------------------->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Address -->
+        <div>
+          <h4>Contact</h4>
+          <p style="font-size: 30px">shristiwebmedia</p>
+          <p>
+            4TH FLOOR 83 SHAYAMA PRASAD MUKHERJEE RD,<br />Kolkata, WB 700026
+          </p>
+          <p>
+            Call us: <a href="tel:+442080640725">+44-2080640725</a><br />Email:
+            info@shristiwebmedia.com
+          </p>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Website Development</a></li>
+            <li><a href="#">custom web development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2025 shristiwebmedia. All rights reserved.</div>
+    </footer>
+    <!-----------------------------------------------------JS------------------------------->
+    <script src="https://unpkg.com/three@0.160.1/build/three.min.js"></script>
+    <script src="main.js"></script>
+    
+    
+  </body>
 </html>
