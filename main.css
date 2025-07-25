@@ -1097,3 +1097,115 @@ li {
 .email {
   color: #002bff;
 }
+@media (max-width: 600px) {
+  .container-ecom {
+    grid-template-columns: 1fr;
+  }
+  .ecom-image {
+    min-height: 300px !important;
+  }
+  .main-card, .orbiting-card {
+    width: 90vw !important;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .text-color {
+    font-size: 2rem;
+    padding: 10px;
+    line-height: 1.4;
+  }
+  .about-container {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    height: 40vh;
+  }
+  .slide img {
+    object-fit: cover;
+    height: 40vh;
+  }
+}
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .service-list,
+  .card-service,
+  .process,
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    padding: 10px !important;
+    gap: 10px !important;
+  }
+  .main-card, .orbiting-card { width: 100% !important; }
+}
+/* ---------- Base Slider Styles ---------- */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* ---------- Mobile Responsive ---------- */
+
+/* For Tablets and Small Laptops (Below 768px) */
+@media (max-width: 768px) {
+  .carousel {
+    height: 50vh;
+  }
+
+  .slide img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .overlay {
+    padding: 1rem;
+  }
+
+  .overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .overlay ul li {
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Devices (Below 600px) */
+@media (max-width: 600px) {
+  .carousel {
+    height: 40vh;
+  }
+
+  .slide img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .overlay h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .overlay ul {
+    padding-left: 1rem;
+  }
+
+  .overlay ul li {
+    font-size: 0.9rem;
+  }
+}
