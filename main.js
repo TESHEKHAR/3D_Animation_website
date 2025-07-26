@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           index = 0;
         }, 1000);
       }
-    }, 5000);
+    }, 3000);
   }
 
   function stopAutoSlide() {
