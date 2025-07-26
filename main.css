@@ -261,7 +261,7 @@ canvas {
   position: relative;
   overflow: hidden;
 }
-/* 🌈 Blurred Background Glow */
+
 .background-glow {
   position: absolute;
   top: -100px;
@@ -699,14 +699,7 @@ canvas {
   text-align: center;
   color: var(--blue);
 }
-/*-------------------------------------------webdevelopment  process----------------------*/
-/*.container-two {
-  max-width: 100vw;
-  margin: 0px auto;
-  background-color: var(--body);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}*/
+
 .container-ecom {
   width: 100vw;
   background: black;
@@ -835,13 +828,6 @@ li {
   width: 100%;
   height: 90vh;
 }
-
-/* .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-} */
 .overlay {
   position: absolute;
   inset: 0;
@@ -931,7 +917,7 @@ li {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   color: white;
@@ -1035,7 +1021,7 @@ li {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  -webkit-backdrop-filter: blur(10px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   color: white;
