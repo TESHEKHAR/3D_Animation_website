@@ -1085,11 +1085,11 @@ li {
 }
 @media (max-width: 768px) {
   .carousel {
-    height: 40vh;
+    height: 30vh;
   }
   .slide img {
     object-fit: cover;
-    height: 40vh;
+    height: 30vh;
   }
 }
 @media (max-width: 600px) {
@@ -1138,27 +1138,25 @@ li {
   }
   .overlay h2 {
     font-size: 1.2rem;
-    text-align: center; /* Ensures the heading is centered */
+    text-align: center; 
   }
 
   .overlay ul {
-    /* Add this to center the list itself within the overlay content */
-    display: inline-block; /* Allows auto-width based on content */
-    text-align: left; /* Keep bullet points left-aligned within the list */
-    padding: 0; /* Remove default padding from ul */
+    display: inline-block; 
+    text-align: left;
+    padding: 0;
   }
 
   .overlay ul li {
     font-size: 0.9rem;
-    text-align: left; /* Keep bullet points left-aligned within their list item */
+    text-align: left;
   }
 
   .overlay-content {
-    /* Center the overlay content block for smaller screens */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 90%; /* Adjust as needed */
+    max-width: 90%; 
   }
 }

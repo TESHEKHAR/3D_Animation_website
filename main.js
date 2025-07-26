@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (index === slideCount - 1) {
         setTimeout(() => {
-          slides.style.transition = "none";
-          slides.style.transform = "translateX(0)";
+          slides.style.transition = "transform 1s ease-in-out";
+          slides.style.transform = `translateX(-${index * 100}%)`;
           index = 0;
         }, 1000);
       }
-    }, 3000);
+    }, 5000);
   }
 
   function stopAutoSlide() {
@@ -120,5 +120,3 @@ function reveal() {
   }
 }
 
-// ❌ Removed duplicate Hero Slider code
-// ✅ Already handled inside DOMContentLoaded block above
